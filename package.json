@@ -1,0 +1,7 @@
+{
+  "name": "borkify",
+  "version": "1.0.0",
+  "description": "convert ASCII to and from goofy text",
+  "author": "David Bushong <david@bushong.net>",
+  "license": "MIT"
+}

@@ -8,3 +8,15 @@ mostly useful ASCII out of accented "high-bit" text.
 
     % echo "Jöe Smíth uses “annoying smart quotes”" | borkify -r
     Joe Smith uses "annoying smart quotes"
+
+It's also a node module that does the same:
+
+```coffee
+{ toASCII, fromASCII } = require 'borkify'
+
+console.log toASCII 'Hérè ïs søme idiot’s text.'
+# ==> Here is some idiot's text.
+
+console.log fromASCII "Let's make this look really horrible."
+# ==> ∟ẻţיš ḿăḵě †ḣ¡ﻱ ļỏőḵ ŗęǡłŀỹ ḧőŗṙíЫě∙
+```
